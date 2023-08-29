@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Loan Calculetor</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+<body>
+		      <h1>Loan Calculetor</h1>
+              <hr>
+
+		                <form id="loan-form">
+                                <div class="prepend">
+                                    <span>Ruppes ₹</span>
+
+                                    <input type="text" id="amount" placeholder="Loan Amount"><br>                            
+                                    <span>Interest %</span>
+
+                                    <input type="text" id="interest" placeholder="Interest"><br>
+
+                                    <span>Time <i class="ri-time-fill"></i></span>
+
+                                    <input type="text" id="years" placeholder="Years To Repay"><br>                  
+                                    <button type="submit" value="Calculate" >Calculate</button>
+                               </div>
+                         </form>
+
+                    <!-- Loading Animation -->
+                    <div id="loading">
+                        
+                    </div>
+
+                    <!-- Results -->
+                    <div id="results" class="pt-4">
+                        <h5>Results</h5>
+                        <hr>
+                        
+                                <div class="prepend">
+                                <span class="input-group-text">Monthly Payment</span>
+                                
+                                <input type="text" class="form-control" id="monthly-payment" disabled><br>
+
+                                <span class="input-group-text">Total Payment</span>
+                               
+                                <input type="text" class="form-control" id="total-payment" disabled> <br>                         
+        
+                                <span class="input-group-text">Total Interest</span><br> 
+                          
+                                <input type="text" class="form-control" id="total-interest" disabled>
+                        </div>
+                            
+        <script src="./logics.js"></script>
+</body>
+</html>
